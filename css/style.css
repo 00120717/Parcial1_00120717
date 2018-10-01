@@ -32,9 +32,9 @@ rgba(109, 104, 104, 0.801)
 
 /* Menu */
 .navegar{
-	width: 1000px;
-	margin: 30px auto;
-    background: #13131342;
+	width: 100%;
+	margin:0;
+    background: #02020242;
     position: absolute;
     top: 0;
 }
@@ -56,7 +56,7 @@ rgba(109, 104, 104, 0.801)
 .menu > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: #353535;
+	color: #fff;
 	font-family: 'Open sans';
     text-decoration: none;
     background: none;
@@ -118,7 +118,14 @@ header  p{
     line-height: 35px;
     font-weight: 100;
 }
-
+.head_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+}
 .text{
     position: relative;
     display: flex;
@@ -141,8 +148,8 @@ header  p{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     padding: 5%;
     background-color: #f5f5f5;
     grid-gap: 1.5em;
@@ -182,6 +189,44 @@ header  p{
     text-align: center;
 }
 
+/*Form*/
+.form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../img/contacus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    color: #fef6f4;
+}
+
+.send{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.contact_us{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(109, 104, 104, 0.801);
+    width: 50%;
+    height: 90%;
+
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
 /*Botones*/
 .btn{
     padding: 1em;
@@ -196,21 +241,35 @@ header  p{
     border: 0;
     border-radius: 3px;
     margin: 0;
-    color: white;
-    
-    
+    color: white; 
 }
+
+input#watch7{
+    width: 60%;
+    height: 100%;
+    border: 0;
+    border-radius: 3px;
+    margin: 0;
+    color: white;
+}
+#name,#email{
+    width: 60%;
+    height: 30%;
+    border: #000000 solid 1px;
+    border-radius: 15%;
+}
+
 .btn input#watch1 , input#watch4{
     background-color: orange;
 }
 .btn input#watch2 , input#watch5{
     background-color: orange
 }
-.btn input#watch3 , input#watch6{
+.btn input#watch3 , input#watch6,input#watch7{
     background-color: orange
 }
 
-.btn input#watch1:hover , input#watch4:hover{
+.btn input#watch1:hover , input#watch4:hover,input#watch7:hover{
     background-color: orange;
 }
 .btn input#watch2:hover , input#watch5:hover{
